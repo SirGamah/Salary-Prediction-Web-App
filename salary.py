@@ -319,7 +319,7 @@ if selected == "Explore":
             st.plotly_chart(fig)
 
         if chart == "Age Group VS Salary":
-            mask = data.groupby(['Age'])['Salary'].mean()
+            mask = data.groupby(['Age'])['Salary'].mean().sort_values()
 
             fig = go.Figure([go.Bar(y=mask.index, x=mask.values, orientation='h')])
             fig.update_layout(title_text="Salary Distribution Based on Age Group", xaxis_title="Mean Salary (US$)", yaxis_title="Age Group")
@@ -328,7 +328,7 @@ if selected == "Explore":
             st.plotly_chart(fig)
         
         if chart == "Country VS Salary":
-            mask = data.groupby(['Country'])['Salary'].mean().tail(10)
+            mask = data.groupby(['Country'])['Salary'].mean().sort_values().tail(10)
 
             fig = go.Figure([go.Bar(y=mask.index, x=mask.values, orientation='h')])
             fig.update_layout(title_text="Top 10 Highest Paying Countries", xaxis_title="Mean Salary (US$)", yaxis_title="Country")
@@ -346,7 +346,7 @@ if selected == "Explore":
             st.plotly_chart(fig)
         
         if chart == "Type of Employment VS Salary":
-            mask = data.groupby(['Employment'])['Salary'].mean()
+            mask = data.groupby(['Employment'])['Salary'].mean().sort_values()
 
             fig = go.Figure([go.Bar(y=mask.index, x=mask.values, orientation='h')])
             fig.update_layout(title_text="Salary Distribution Based Type of Employment", xaxis_title="Mean Salary (US$)", yaxis_title="Type of Employment")
@@ -373,7 +373,7 @@ if selected == "Explore":
             st.plotly_chart(fig)
 
         if chart == "Working Type VS Salary":
-            mask = data.groupby(['RemoteWork'])['Salary'].mean()
+            mask = data.groupby(['RemoteWork'])['Salary'].mean().sort_values()
 
             fig = go.Figure([go.Bar(y=mask.index, x=mask.values, orientation='h')])
             fig.update_layout(title_text="Salary Distribution Based on Working Type",xaxis_title="Mean Salary (US$)", yaxis_title="Work Type")
@@ -382,7 +382,7 @@ if selected == "Explore":
             st.plotly_chart(fig)
 
         if chart == "Work Experience Group VS Salary":
-            mask = data.groupby(['WorkExpGroup'])['Salary'].mean()
+            mask = data.groupby(['WorkExpGroup'])['Salary'].mean().sort_values()
 
             fig = go.Figure([go.Bar(y=mask.index, x=mask.values, orientation='h')])
             fig.update_layout(title_text="Salary Distribution Based on Work Experience", xaxis_title="Mean Salary (US$)", yaxis_title="Work Experience Group")
@@ -416,7 +416,7 @@ if selected == "Explore":
             st.plotly_chart(fig)
 
         if chart == "AI Usage Benefit":
-            mask = data['AIBen'].value_counts().sort_values() #.tail(10)
+            mask = data['AIBen'].value_counts().sort_values()
 
             fig = go.Figure([go.Bar(y=mask.index, x=mask.values, orientation='h')])
             fig.update_layout(title_text="Developers' View on AI Usage Benefit", xaxis_title="Number of Developers", yaxis_title="AI Usage Benefit")
