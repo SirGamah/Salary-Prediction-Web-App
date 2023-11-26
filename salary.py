@@ -373,7 +373,7 @@ if selected == "Explore":
 
             st.plotly_chart(fig)
 
-    with tab2:
+    with tab3:
         chart_opt = ["AI Users",
                      "AI Usage Semtiment",
                      "AI Usage Benefit"]
