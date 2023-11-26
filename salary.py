@@ -442,7 +442,7 @@ if selected == "Prediction":
     st.write("""#### Imput the following details to predict loan defaulting.""")
 
     # Define some terms
-    age_group = ['25-34', '35-44', '55-64', '18-24', '45-54', 'Under 18', 'Above 65', 'Prefer not to say']
+    age_group = ['Under 18', '18-24', '25-34', '35-44', '45-54', '55-64', 'Above 65', 'Prefer not to say']
     countries = ['USA', 'Other Asian Country', 'United Kingdom', 'Netherlands',
        'Germany', 'France', 'Spain', 'South Africa', 'Italy',
        'Other European Country', 'Other African Country', 'Brazil',
@@ -452,8 +452,8 @@ if selected == "Prediction":
        'Portugal', 'Australia', 'Czech Republic',
        'Other South American Country', 'Pakistan', 'Colombia', 'Mexico',
        'New Zealand', 'Other Oceanian Country', 'Isle of Man']
-    edu_level = ['Bachelor’s degree', 'Other certifications', 'Master’s degree', 'Post Grad degree']
-    employment = ['Employed full time', 'Freelancer/Independent contractor', 'Employed part time']
+    edu_level = ['Bachelor’s degree', 'Master’s degree', 'Post Grad degree', 'Other certifications']
+    employment = ['Employed full time', 'Employed part time', 'Freelancer/Independent contractor']
     dev_type = ['Senior Executive', 'Full Stack Developer', 'Back-end Developer',
        'Testing Developer', 'Front-end Developer', 'System Administrator',
        'Mobile Developer', 'Application Developer', 'Academic Researcher',
@@ -471,7 +471,7 @@ if selected == "Prediction":
        'Manufacturing/Transportation', 'Retail and Consumer Services',
        'Education', 'Legal Services', 'Healthcare', 'Oil & Gas',
        'Wholesale', 'Advertising Services', 'Insurance']
-    remote = ['Remote', 'Hybrid', 'In-person']
+    remote = ['Remote', 'In-person', 'Hybrid']
     work_exp = ['Below 1 year','1-5', '6-10','11-15', '16-20', '21-25', '26-30', '31-35', '36-40', '41-45']
 
     # Set user inputs
