@@ -426,6 +426,7 @@ if selected == "Prediction":
     X['Country'] = country_encoder.fit_transform(X['Country'])
     X['EdLevel'] = edu_encoder.fit_transform(X['EdLevel'])
     X['Employment'] = emp_encoder.fit_transform(X['Employment'])
+    X['DevType'] = dev_encoder.fit_transform(X['DevType'])
     X['AISelect'] = ai_encoder.fit_transform(X['AISelect'])
     X['Industry'] = industry_encoder.fit_transform(X['Industry'])
     X['RemoteWork'] = rem_encoder.fit_transform(X['RemoteWork'])
