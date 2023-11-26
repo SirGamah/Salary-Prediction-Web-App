@@ -198,8 +198,9 @@ data = load_data() # Load the data
 
 # Set `Home` page
 if selected == "Home":
+    st.write("### Welcome User!")
     st.image("stack-overflow.png", caption="2023 Stack Overflow Survey", use_column_width=True)
-    st.write("""MovieRecommender is a web app that analyzes the 2023 Stack Overflow Developer Survey data and uses Supervised Machine Learning algorithms to predict salary using some user input details.""")
+    st.write("""SalaryPredictionApp is a web app that analyzes the 2023 Stack Overflow Developer Survey data and uses Supervised Machine Learning algorithms to predict salary using some user input details.""")
     st.markdown("""The data is taken from [Stack Overflow Annual Developer Survey](https://insights.stackoverflow.com/survey).""")    
 
 # Set `Explore` page
