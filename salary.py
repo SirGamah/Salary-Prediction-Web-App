@@ -214,7 +214,7 @@ if selected == "Explore":
                      "Developers' Level of Education", 
                      "Type of Employment",
                      "Type of Developer",
-                     "Industry Working In"
+                     "Industry Working In",
                      "Working Type",
                      "Work Experience Group Prepsentation"]
         
