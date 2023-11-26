@@ -292,7 +292,7 @@ if selected == "Explore":
                      "Developers' Level of Education VS Salary", 
                      "Type of Employment VS Salary",
                      "Type of Developer VS Salary",
-                     "Industry Working In VS Salary"
+                     "Industry Working In VS Salary",
                      "Working Type VS Salary",
                      "Work Experience Group VS Salary"]
         
