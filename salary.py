@@ -16,7 +16,7 @@ warnings.filterwarnings("ignore")
 
 #-----------Web page setting-------------------#
 page_title = "Developer Salary Predition App"
-page_icon = ":robot"
+page_icon = "💰"
 layout = "centered"
 
 #--------------------Page configuration------------------#
