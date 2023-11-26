@@ -225,6 +225,7 @@ if selected == "Explore":
 
             fig = go.Figure([go.Bar(y=mask.index, x=mask.values, orientation='h')])
             fig.update_layout(title_text="Age Group Representation", xaxis_title="Number of Developers", yaxis_title="Age Group")
+            fig.update_traces(texttemplate='%{x}', textposition='inside')
 
             st.plotly_chart(fig)
         
@@ -233,6 +234,7 @@ if selected == "Explore":
 
             fig = go.Figure([go.Bar(y=mask.index, x=mask.values, orientation='h')])
             fig.update_layout(title_text="Top 10 Most Represented Countries", xaxis_title="Number of Developers", yaxis_title="Country")
+            fig.update_traces(texttemplate='%{x}', textposition='inside')
 
             st.plotly_chart(fig)
 
@@ -241,6 +243,7 @@ if selected == "Explore":
 
             fig = go.Figure([go.Bar(y=mask.index, x=mask.values, orientation='h')])
             fig.update_layout(title_text="Level Of Education Representation", xaxis_title="Number of Developers", yaxis_title="Level Of Education")
+            fig.update_traces(texttemplate='%{x}', textposition='inside')
 
             st.plotly_chart(fig)
         
@@ -249,6 +252,7 @@ if selected == "Explore":
             
             fig = go.Figure([go.Bar(y=mask.index, x=mask.values, orientation='h')])
             fig.update_layout(title_text="Type of Employment Representation", xaxis_title="Number of Developers", yaxis_title="Employment Type")
+            fig.update_traces(texttemplate='%{x}', textposition='inside')
             
             st.plotly_chart(fig)
         
@@ -257,6 +261,7 @@ if selected == "Explore":
 
             fig = go.Figure([go.Bar(y=mask.index, x=mask.values, orientation='h')])
             fig.update_layout(title_text="Top 10 Most Represented Developer Type", xaxis_title="Number of Developers", yaxis_title="Type of Developer")
+            fig.update_traces(texttemplate='%{x}', textposition='inside')
 
             st.plotly_chart(fig)
 
@@ -265,6 +270,7 @@ if selected == "Explore":
 
             fig = go.Figure([go.Bar(y=mask.index, x=mask.values, orientation='h')])
             fig.update_layout(title_text="Industry Representation of Developers", xaxis_title="Number of Developers", yaxis_title="Industry")
+            fig.update_traces(texttemplate='%{x}', textposition='inside')
             
             st.plotly_chart(fig)
 
@@ -273,6 +279,7 @@ if selected == "Explore":
 
             fig = go.Figure([go.Bar(y=mask.index, x=mask.values, orientation='h')])
             fig.update_layout(title_text="Working Condition Representation of Developers", xaxis_title="Number of Developers", yaxis_title="Working Condition")
+            fig.update_traces(texttemplate='%{x}', textposition='inside')
 
             st.plotly_chart(fig)
 
@@ -281,6 +288,7 @@ if selected == "Explore":
 
             fig = go.Figure([go.Bar(y=mask.index, x=mask.values, orientation='h')])
             fig.update_layout(title_text="Work Experience Group Representation", xaxis_title="Number of Developers", yaxis_title="Work Experience Group")
+            fig.update_traces(texttemplate='%{x}', textposition='inside')
 
             st.plotly_chart(fig)
 
@@ -315,6 +323,7 @@ if selected == "Explore":
 
             fig = go.Figure([go.Bar(y=mask.index, x=mask.values, orientation='h')])
             fig.update_layout(title_text="Salary Distribution Based on Age Group", xaxis_title="Mean Salary (US$)", yaxis_title="Age Group")
+            fig.update_traces(texttemplate='%{x}', textposition='inside')
 
             st.plotly_chart(fig)
         
@@ -323,6 +332,7 @@ if selected == "Explore":
 
             fig = go.Figure([go.Bar(y=mask.index, x=mask.values, orientation='h')])
             fig.update_layout(title_text="Top 10 Highest Paying Countries", xaxis_title="Mean Salary (US$)", yaxis_title="Country")
+            fig.update_traces(texttemplate='%{x}', textposition='inside')
 
             st.plotly_chart(fig)
         
@@ -331,6 +341,7 @@ if selected == "Explore":
 
             fig = go.Figure([go.Bar(y=mask.index, x=mask.values, orientation='h')])
             fig.update_layout(title_text="Salary Distribution Based on Qualification", xaxis_title="Mean Salary (US$)", yaxis_title="Qualification")
+            fig.update_traces(texttemplate='%{x}', textposition='inside')
 
             st.plotly_chart(fig)
         
@@ -339,6 +350,7 @@ if selected == "Explore":
 
             fig = go.Figure([go.Bar(y=mask.index, x=mask.values, orientation='h')])
             fig.update_layout(title_text="Salary Distribution Based Type of Employment", xaxis_title="Mean Salary (US$)", yaxis_title="Type of Employment")
+            fig.update_traces(texttemplate='%{x}', textposition='inside')
 
             st.plotly_chart(fig)
 
@@ -347,6 +359,7 @@ if selected == "Explore":
 
             fig = go.Figure([go.Bar(y=mask.index, x=mask.values, orientation='h')])
             fig.update_layout(title_text="Salary Distribution of Top 10 Type of Developers", xaxis_title="Mean Salary (US$)", yaxis_title="Type of Developer")
+            fig.update_traces(texttemplate='%{x}', textposition='inside')
 
             st.plotly_chart(fig)
 
@@ -355,6 +368,7 @@ if selected == "Explore":
 
             fig = go.Figure([go.Bar(y=mask.index, x=mask.values, orientation='h')])
             fig.update_layout(title_text="Top 10 Highest Paying Industries", xaxis_title="Mean Salary (US$)", yaxis_title="Industry")
+            fig.update_traces(texttemplate='%{x}', textposition='inside')
 
             st.plotly_chart(fig)
 
@@ -363,6 +377,7 @@ if selected == "Explore":
 
             fig = go.Figure([go.Bar(y=mask.index, x=mask.values, orientation='h')])
             fig.update_layout(title_text="Salary Distribution Based on Working Type",xaxis_title="Mean Salary (US$)", yaxis_title="Work Type")
+            fig.update_traces(texttemplate='%{x}', textposition='inside')
             
             st.plotly_chart(fig)
 
@@ -371,6 +386,7 @@ if selected == "Explore":
 
             fig = go.Figure([go.Bar(y=mask.index, x=mask.values, orientation='h')])
             fig.update_layout(title_text="Salary Distribution Based on Work Experience", xaxis_title="Mean Salary (US$)", yaxis_title="Work Experience Group")
+            fig.update_traces(texttemplate='%{x}', textposition='inside')
 
             st.plotly_chart(fig)
 
@@ -386,6 +402,7 @@ if selected == "Explore":
 
             fig = go.Figure([go.Bar(y=mask.index, x=mask.values, orientation='h')])
             fig.update_layout(title_text="Developers'Usage of AI", xaxis_title="Number of Developers", yaxis_title="AI Usage")
+            fig.update_traces(texttemplate='%{x}', textposition='inside')
 
             st.plotly_chart(fig)
         
@@ -394,6 +411,7 @@ if selected == "Explore":
 
             fig = go.Figure([go.Bar(y=mask.index, x=mask.values, orientation='h')])
             fig.update_layout(title_text="AI Usage Sentiment of Developers", xaxis_title="Number of Developers", yaxis_title="AI Usage Sentiment")
+            fig.update_traces(texttemplate='%{x}', textposition='inside')
 
             st.plotly_chart(fig)
 
@@ -402,6 +420,7 @@ if selected == "Explore":
 
             fig = go.Figure([go.Bar(y=mask.index, x=mask.values, orientation='h')])
             fig.update_layout(title_text="Developers' View on AI Usage Benefit", xaxis_title="Number of Developers", yaxis_title="AI Usage Benefit")
+            fig.update_traces(texttemplate='%{x}', textposition='inside')
 
             st.plotly_chart(fig)
 
